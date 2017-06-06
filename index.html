@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+  <meta charset="UTF-8">
+  <title>Curriculum|Vitae</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js' type='text/javascript'></script>
+
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="style.css">
+   <script src='http://code.jquery.com/jquery-1.10.2.min.js' type='text/javascript'></script>
+<link rel="shortcut icon" href="foto.jpg">
+  <script type='text/javascript'>
+//Función para ir hasta arriba del documento
+//Objeto JQuery(): Devuelve una colección de elementos coincidentes con el o los argumentos pasados,
+//ya sea que se encuentren en el DOM o sean creados por el paso de una cadena HTML.
+/*
+  jQuery.noConflict();        //Renunciar al control de jQuery de la variable $.
+                    //$ es un selector que le pasa atributos a JQuery()
+
+  jQuery(document).ready(function() { //Especifica una funcion que se ejecuta cuando el DOM (Documento)
+                    //esta completamente cargado
+
+    jQuery("#ArribayAbajo").hide();   //ocultamos el boton para el primer ejemplo
+
+    jQuery("#Arriba").hide();   //Oculta los elementos que coincidad con el identificador
+
+    jQuery(function () {      //JQuery(funcion()) Ejecuta la funcion cuando se carga el DOM (esta listo)
+
+      jQuery(window).scroll(function () { //Manejador del evento 'scroll' que ejecuta cierta funcion
+
+        if (jQuery(this).scrollTop() > 50) { //Obtiene el valor de la posicion actual de la barra de  
+                           //'scroll' con respecto al elemento, en este caso 'this'
+
+          jQuery('#Arriba').fadeIn();    //Muestra los elementos coincidentes con un efecto de      
+                           //desvanecimiento
+        } else {
+          jQuery('#Arriba').fadeOut();     //Oculta los elementos coincidentes con un efecto de     
+                           //desvanecimiento
+        }
+      });
+      jQuery('#Arriba').click(function () {  //Manejador del evento click que ejecuta cierta funcion
+
+        jQuery('body,html').animate({scrollTop: 0}, 800); //Animate(): Realiza una animación personalizada  
+                                  //de un conjunto de propiedades.
+        return false;
+      });
+    });
+  });
+
+*/  
+  $(document).ready(function() {
+
+    $("#Arriba").hide(); //ocultamos el boton para el primer ejemplo
+        $('#Abajo').fadeIn();
+        $('#Arriba1').fadeOut();
+    
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('#Arriba1').fadeIn();
+        } else {
+          $('#Arriba1').fadeOut();
+        }
+      });
+      $('#Arriba1').click(function () {
+        $('body,html').animate({scrollTop: 0}, 1500);
+        return false;
+      });
+
+      $('#Abajo').click(function () {
+        $('body,html').animate({scrollTop: $(document).height()}, 10); //obtenemos el alto del documento
+        return false;
+      });
+    });
+  });
+
+</script>
+</head>
+<style type="text/css">
+ 
+}
+
+
+
+</style>
+<body>
+<div id='Arriba'> </div>
+
+  <div id="ArribayAbajo"> 
+    <div id='Arriba1'> </div>
+    <div id='Abajo'> </div>
+  </div>
+<style type="text/css">
+	
+	.letra{
+		font-family: 'Pacifico', cursive;
+		color: #175180;
+		font-size: 40px;
+	}
+</style>
+  <div class="cv container">
+  <div class="row">
+    <aside class="col-md-4">
+      <img class="img-circle" src="foto.jpg" width="100" height="100">
+      <h2><span>Eduard</span> Aguilar</h2>
+      <p>Hola!Soy Eduard Aguilar y mi oficio y pasi&oacute;n es la programaci&oacute;n y maquetaci&oacute;n Web.</p>
+      <p>Me considero una persona autodidacta, con muchas inquietudes, muy pulcro y ordenado en cuanto a mis c&oacute;digos se refiere y tambi&eacute;n muy perfecionista con mi trabajo.</p>
+      <p>Me gusta el trato con la gente y sobretodo ense&ntilde;ar y transmitir conocimientos.</p>
+      <ul class="info">
+        <li><a href="https://github.com/eduard182" target="_blank"><i class="fa fa-github"></i>GitHub/eduard182</a></li>
+       
+      <li><a href="https://www.facebook.com/eduard.aguilarg" target="_blank"><i class="fa fa-facebook"></i>Eduard Aguilar</a></li>
+      <li><a href="https://twitter.com/eduardskatepunk?lang=es" target="_blank"><i class="fa fa-twitter"></i>
+      @eduardskatepunk</a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-skype"></i>eduardpunk@hotmail.com</a></i>
+     <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i>eduardaguilar.dev@gmail.com</a></i>
+      <li><a href="#" target="_blank"><i class="fa fa-mobile"></i>0426-179-7969</a></i>
+      </ul>
+    </aside>
+
+    <div class="col-md-8">
+      <div class="letra">
+      <div class="row text-center" >
+      <span class="fa fa-user-circle fa-2x"></span>HABILIDADES<br/>
+       <hr>
+      </div>
+      </div>
+      <div class="row skills">
+        <div class="col-md-4">
+          <section>
+            <p>HTML5</p>
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+          </section>
+          <section>
+            <p>CSS3</p>
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+            
+          </section>
+          <section>
+            <p>PHP</p>
+            <span></span>
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+          </section>
+          <section>
+            <p>Photoshop</p>
+            <span></span>
+            <span></span>
+            <span class="full"></span>
+          
+          </section>
+          <section>
+            <p>Joomla</p>
+            <span></span>
+            <span></span>
+            
+            <span class="full"></span>
+            <span class="full"></span>
+             <span class="full"></span>
+              <span class="full"></span>
+            
+          </section>
+          <section>
+            <p>Bootstrap</p>
+            <span></span
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+       
+          </section>
+        </div>
+        <div class="col-md-4">
+          <section>
+            <p>WordPress</p>
+            <span></span>
+            <span></span
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+          
+          </section>
+          <section>
+        <p>Woocommerce</p>
+            <span></span>
+            <span></span
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+           
+           
+          </section>
+          <section>
+            <p>Javascript</p>
+            <span></span>
+            <span></span>
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+          </section>
+          <section>
+            <p>Illustrator</p>
+            <span></span>
+            <span></span>
+            <span></span
+            <span class="full"></span>
+            
+          </section>
+          <section>
+            <p>Hosting</p>
+            <span></span>
+            <span></span
+            <span class="full"></span>
+            <span class="full"></span>
+            
+          </section>
+          <section>
+            <p>MySQL</p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="full"></span>
+            <span class="full"></span>
+          </section>
+        </div>
+        <div class="col-md-4">
+          
+          <section>          
+            <p>PosgreSql</p>
+            <span></span>
+             <span></span>
+              <span></span>
+            <span class="full"></span>
+            <span class="full"></span>
+          
+          </section>
+          <section>        
+            <p>Ionic</p>
+            <span></span>
+            <span></span>
+            
+            <span class="full"></span>
+             <span class="full"></span>
+            
+          </section>
+          <section>        
+            <p>Phongap</p>
+            <span></span>
+            <span></span
+            <span class="full"></span>
+            <span class="full"></span>
+            <span class="full"></span>
+            
+          </section>
+          <section>          
+            <p>Python</p>
+            <span></span>
+            <span></span>
+            <span class="full"></span>
+           
+          </section>
+          <section>            
+            <p>Ajax</p>
+            <span></span>
+            <span></span>
+            <span class="full"></span>
+            <span class="full"></span>
+            
+          </section>
+        </div>
+
+        <div class="col-md-4">
+          <section>            
+            <p>Json</p>
+            <span></span>
+            <span></span
+            <span class="full"></span>
+            <span class="full"></span>
+           
+          </section>
+          <section>          
+        
+            
+          </section>
+          <section>          
+           
+        </div>
+        <div class="col-md-4">
+          <section>            
+            <p>MongoDb</p>
+            <span></span>
+            <span></span
+            <span class="full"></span>
+            <span class="full"></span>
+           
+          </section>
+          
+        
+        </div>
+        <div class="col-md-4">
+          <section>            
+            <p>Sqlite</p>
+            <span></span>
+            <span></span>
+            <span class="full"></span>
+            <span class="full"></span>
+           
+          </section>
+           <section>
+            
+          </section>
+        </div>
+      </div>
+      
+     <div class="letra">
+     <div class="row text-center" >
+      <span class="fa fa-rocket fa-2x"></span>EXPERIENCIA<br/>
+           <hr>
+      </div>
+           </div>
+
+      <section>
+        <h3>UNELLEZ-Barinas</h3>
+        <h4>Web Master</h4>
+        <p>Me encuentro ejerciendo de Webmaster, backend y frontend Web del consejo directivo,realizando proyectos de trabajo de grado Así como también me encargo de los temas de seguridad online.</p>
+        <p>Mi principal misión es rediseñar la Web y la imagen online de la empresa, el posicionamiento SEO.</p>
+        <p>Desarrollando un sistema de control de archivos y gestion de actividades de la empresa.</p>
+      </section>
+     
+      <section>
+        <h3>Freelance</h3>
+        <h4>Desarrollador y Diseñador Web</h4>
+        <p>Diseño, maquetación, desarrollo y programación de la Web. Así como encargarme también del SEO, dominio, hosting y seguridad del site.</p>
+      </section>
+      <section>
+        <h3>Pasantias Profesionales</h3>
+        <h4>Universidad Nacional Experimental De los Llanos Occidentales Ezequiel Zamora-Barinas-Venezuela</h4>
+        <p>Me encontre relizando pasantias profesionales para optar mi titulo ingeniero en informatica,en el cual desarrolle el modulo de gestion de equipos y personal de la empresa-SISGEM.</p>
+
+      </section>
+      <section>
+        <h3>Reparaci&oacute;n de PC's</h3>
+        
+        
+      </section>
+      <section>
+        <h3></h3>
+        <h4>Técnico informática</h4>
+        <p>Mantenimiento de los sistemas informáticos y equipos de la empresa-Consejo Directivo</p>
+      </section>
+  <div class="letra">
+  <div class="row text-center" >
+      <span class="fa fa-graduation-cap fa-2x"></span>ESTUDIOS<br/>
+           <hr>
+      </div>
+      </div>
+      <section>
+      <h3>Basica</h3>
+       <p>Egresado De La Escuela Basica Miguel Antonio Caro-Amazonas-Venezuela</p>
+      </section>
+      <h3>Tecnico Medio En Ciencias Agricolas</h3>
+       <p>Egresado De La Escuela Agronomica Salesiana San Jose-Barinas-Venezuela</p>
+      </section>
+        <h3>Ingeniero En informatica</h3>
+       <p>Egresado De La Universidad Nacional Experimental De Los LLanos Occidentales "Ezequiel Zamora"-Barinas-Venezuela</p>
+      </section>
+      <div class="letra">
+       <div class="row text-center" >
+      <span class="fa fa-flask fa-2x"></span>CURSOS<br/>
+           <hr>
+      </div>
+       </div>
+      <section
+      <section>
+        <h3>Técnico en Estándares Web (XHTML Y CSS)</h3>
+        <p>El curso se componía del aprendizaje del lenguaje básico para poder desarrollar potentes sitios web con XHTML que es el lenguaje universal para la creación de sitios y las hojas de estilo en cascada CSS para diseñar y adaptar las webs a tus necesidades.</p>
+      </section>
+      <section>
+        <h3>Curso superior Desarrollo, Creación y Programación de Páginas Web</h3>
+        <p>En este curso superior de programación y desarrollo Web he abarcado muchos lenguajes y CMS, tales como: HTML5, CSS3, PHP, MySQL, Javascript, Jquery, WordPress, Woocommerce, Joomla!, Prestashop, etc.</p>
+        <p>El objetivo del curso ha sido la preparación de diseñadores que se desenvuelvan en el desarrollo de diseños para los nuevos entornos digitales (web-multimedia).</p>
+      </section>
+      <section>
+        <h3>Manejador De Base De Datos MYSQL</h3>
+        <p>El curso completado me ha ayudado a aprender a manejar las herramientas a crear base de datos relacionales asi implemtarlo en mis proyectos.</p>
+      </section>
+      <section>
+        <h3>Soporte Tecnico Canaima</h3>
+        <p>En este curso complete a manejar el sistema de comando de  linux lo mas importates.</p>
+      </section>
+    </div>
+  </div>
+</div>
+  
+    <span class="icon-pencil"></span>
+</body>
+</html>
